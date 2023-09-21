@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Sprint Game</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="./resources/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicon-16x16.png">
+    <link rel="shortcut icon" href="./resources/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="game">
+        <div class="game_header">
+            <h1 class="game_header-title">Math Sprint Game</h1>
+        </div>
+        <div class="game_menu">
+            <div class="game_container">
+                <button class="game_container-questions">
+                    <span class="game_container-questions--text">
+                        10 Questions
+                    </span>
+                    <div class="game_container-questions--score">
+                        Best Score <span id="score"></span>
+                    </div>
+                </button>
+                <button class="game_container-questions">
+                    <span class="game_container-questions--text">
+                        25 Questions
+                    </span>
+                    <div class="game_container-questions--score">
+                        Best Score <span id="score"></span>
+                    </div>
+                </button>
+                <button class="game_container-questions">
+                    <span class="game_container-questions--text">
+                        50 Questions
+                    </span>
+                    <div class="game_container-questions--score">
+                        Best Score <span id="score"></span>
+                    </div>
+                </button>
+                <button class="game_container-questions">
+                    <span class="game_container-questions--text">
+                        99 Questions
+                    </span>
+                    <div class="game_container-questions--score">
+                        Best Score <span id="score"></span>
+                    </div>
+                </button>
+            </div>
+            <div class="game_container-round">
+                <button class="game_container-round--button">
+                    Start Round
+                </button>
+            </div>
+        </div>
+        <span class="game_countdown hide"></span>
+        <div class="game_round hide">
+            <div class="game_questions">
+                <h3 class="game_questions-title">Fill In The Blank With Correct Number Or Operator</h3>
+                <span class='game_questions-info'></span>
+                <div class='game_questions-container'>
+                    <input type='number' class='game_questions-container--text' id='number1'></input>
+                    <input type='text' class='game_questions-container--text' id='operator'></input>
+                    <input type='number' class='game_questions-container--text' id='number2'></input>
+                    <span class='game_questions-container--text'> = </span>
+                    <input type='text' class='game_questions-container--text' id='result'></input>
+                </div>
+                <span class="select-round hide">Please select one of the options above</span>
+                <button class="game_questions-button">Next</button>
+            </div>
+        </div>
+        <div class="game_scores hide">
+            <span class="game_scores-base"></span>
+            <span class="game_scores-penalty"></span>
+            <span class="game_scores-total"></span>
+            <span class="game_scores-win"></span>
+            <button class="game_scores-button">Play Again</button>
+        </div>
+    </main>
+
+        
+    <script src="./src/script.js"></script>
+    <script src="./src/confetti.js"></script>
+</body>
+
+</html>
