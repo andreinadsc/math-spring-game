@@ -8,7 +8,7 @@
   <h3 align="center">Math Spring Game</h3>
   <p align="center">
     <br />
-    <a href="">View Demo</a>
+    <a href="https://andreinadsc.github.io/math-spring-game/">View Demo</a>
     ·
     <a href="https://github.com/andreinadsc/math-spring-game/issues">Report Bug</a>
   </p>
